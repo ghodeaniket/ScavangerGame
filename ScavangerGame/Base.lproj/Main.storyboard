@@ -65,6 +65,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zd-qz-wzX">
                                                         <rect key="frame" x="83.5" y="0.0" width="291.5" height="42.5"/>
                                                         <state key="normal" title="Start"/>
+                                                        <connections>
+                                                            <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBs-S9-wM5"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -80,6 +83,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqn-1B-95w">
                                                         <rect key="frame" x="83.5" y="0.0" width="291.5" height="42.5"/>
                                                         <state key="normal" title="Skip"/>
+                                                        <connections>
+                                                            <action selector="skipButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lqh-65-ycS"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -110,6 +116,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomView" destination="qNW-zJ-HKy" id="Yb9-9j-RwW"/>
+                        <outlet property="highscoreLabel" destination="zXQ-Fm-OT9" id="hI4-fv-ePS"/>
+                        <outlet property="objectLabel" destination="dAC-O8-UJT" id="jfo-Rj-aDh"/>
+                        <outlet property="scoreLabel" destination="mvd-Iu-LqE" id="nWk-pz-cH3"/>
+                        <outlet property="skipButton" destination="Bqn-1B-95w" id="tv9-9M-f77"/>
+                        <outlet property="startButton" destination="9Zd-qz-wzX" id="Iti-ZP-0pS"/>
+                        <outlet property="timeLabel" destination="jHl-gm-Hg8" id="oH9-lk-WT3"/>
+                        <outlet property="topView" destination="pcQ-NU-tGe" id="aIs-Ih-avK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
